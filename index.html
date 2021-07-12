@@ -6,26 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #inputbox{
+        textarea{
+            width: 80%;
+            height: 10vh;
             display: block;
-            justify-content: center;
-            align-items: center;
-            box-sizing: content-box;
-            margin-bottom: 2rem;
-            height: 12vh;
-            width: 55%;
+            margin: 1rem;
+            padding: 1rem;
+
+        }
+
+        #btnTranslate{
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #outputArea{
+            border: 1px solid black;
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: large;
+            font-weight: 800;
+
+        }
+        h1{
+            
+            margin: 1rem;
+            padding: 1rem;
         }
     </style>
 
 </head>
 <body>
-    <div>
-    <textarea id="inputbox" placeholder="type here what you want ot translate in banana language"></textarea>
-    </div>  
-    <div>
-    <button id="translate" >Translate to banana</button>
-    </div>
-    
+    <h1>Hi banana....</h1>
+   <textarea id="txt-input" placeholder=" write something you want ot translate"></textarea>
+
+   <button id="btn-translate">Translate to banana</button>
+
+   <div id="output"></div>
+
+
+
 
 </body>
 </html>
