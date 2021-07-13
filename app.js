@@ -2,7 +2,7 @@ var btn = document.querySelector("#btnTranslate")
 var engText = document.querySelector("#inputRead")
 var outputDiv = document.querySelector("#output")
 btn.addEventListener("click",clickFn)
-var serverUrl= "https://api.funtranslations.com/translate/minion.json"
+var serverUrl = "https://api.funtranslations.com/translate/minion.json"
 
 function getUrl(text){
     return serverUrl +"?" + "text=" + text
