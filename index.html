@@ -4,51 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>Minion translator</title>
+    <style> 
         textarea{
-            width: 80%;
+            width: 40%;
             height: 10vh;
-            display: block;
             margin: 1rem;
             padding: 1rem;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid gray ;
 
         }
+        #output{
+            border: 2px solid gray;
+            border-radius: 8px;
+           
 
+            width: 40%;
+            height: 10vh;
+            margin: 1rem;
+            padding: 1rem;
+            margin-bottom: 6px;
+        }
         #btnTranslate{
             margin: 1rem;
-            padding: 1rem;
-        }
-
-        #outputArea{
-            border: 1px solid black;
-            width: 80%;
-            height: 10vh;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
+            padding:1rem;
+            border-radius: 8px;
+            border: 2px solid gray;
+            background-color: rgb(180, 178, 178); 
             font-size: large;
-            font-weight: 800;
-
-        }
-        h1{
+            color: honeydew;
             
-            margin: 1rem;
-            padding: 1rem;
+            
         }
+        #align{
+            background-color: rgba(245, 242, 61, 0.863);
+             border: 3px solid gray;
+             border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6rem;
+            margin-left: 26%;
+            height: 50%;
+            width: 50%;
+           
+        }
+        .arng{
+            margin: 6px;
+            padding: 1rem;
+            text-decoration: underline;
+        }
+        #head{
+            text-align: center;
+            text-shadow: 2px 0px rgb(209, 209, 209);
+            text-decoration: overline;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+            
+        }
+       
+        h2{
+            background-color: rgba(226, 205, 87, 0.342);
+            margin: none;
+        }
+    
     </style>
-
 </head>
 <body>
-    <h1>Hi banana....</h1>
-   <textarea id="txt-input" placeholder=" write something you want ot translate"></textarea>
+    <div id="align">
+        <header id="head">
+            <h2>Minion-translator</h2>
 
-   <button id="btn-translate">Translate to banana</button>
+        </header>
 
-   <div id="output"></div>
+    <h3 class="arng">Human language</h3>
+    <textarea id="inputRead" placeholder="type in english here" ></textarea>
 
-
-
-
+    <button id="btnTranslate" style="" > Translate</button>
+    <h3 class="arng">Minion language</h3>
+    <div id="output"></div>
+    <script src="/app.js" type="text/javascript"></script>
+    </div>
 </body>
 </html>
